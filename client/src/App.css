@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #23272a;
+  color: #fff;
+}
+
+/* Убираем фокус-контуры везде (для красоты, но accessibility можно вернуть!) */
+* {
+  outline: none;
+}
+
+/* Для корректного рендера flex-контейнеров */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Мелкие фиксы для изображений */
+img {
+  user-drag: none;
+  user-select: none;
+}
+
+/* Для будущих элементов — базовый transition */
+button, input, select {
+  transition: background 0.2s, border-color 0.2s;
+}
